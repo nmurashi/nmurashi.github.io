@@ -1,0 +1,21 @@
+html{
+    font-family: "Open Sans", sans-serif;
+}
+
+.imgpad {
+    padding: 0px 10px;
+}
+
+li {
+    padding: 5px;
+}
+
+/* credit: https://stackoverflow.com/questions/47889239/make-anchor-link-go-some-pixels-above-id/47889385#47889385 */
+#qualifications::before, #expertise::before, #experience::before, #education::before, #projects::before { 
+    display: block; 
+    content: " "; 
+    margin-top: -80px; 
+    height: 80px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
