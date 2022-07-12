@@ -1,0 +1,1 @@
+`goto ` [nmurashi.github.io](https://nmurashi.github.io);
