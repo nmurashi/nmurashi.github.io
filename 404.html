@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found</title>
+    <style>
+      html {
+        /* Base size — change this one value and h1/p scale together, same ratio */
+        font-size: 16px;
+      }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        background: #f1f1f1;
+        color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .box { max-width: 480px; }
+      h1 { font-size: 5rem; margin-bottom: 8px; }
+      p { font-size: 1.75rem; color: #555; line-height: 1.5; }
+      a { color: #4183c4; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>404</h1>
+      <p id="message">That page doesn't exist.</p>
+      <p><a href="/">Go home</a></p>
+    </div>
+
+    <script>
+      // Add the exact, correctly-cased path segment for each project site here.
+      // Only paths in this list get case-corrected; anything else is a real 404.
+      var KNOWN_PATHS = ['KUCI-thing'];
+
+      (function () {
+        var pathname = window.location.pathname;
+        var segments = pathname.split('/').filter(Boolean);
+        if (segments.length === 0) return;
+
+        var requested = segments[0];
+        var match = KNOWN_PATHS.find(function (known) {
+          return known.toLowerCase() === requested.toLowerCase();
+        });
+
+        if (match && match !== requested) {
+          segments[0] = match;
+          var target = '/' + segments.join('/') + '/' + window.location.search + window.location.hash;
+          document.getElementById('message').textContent = 'Redirecting to the correct page...';
+          window.location.replace(target);
+        }
+      })();
+    </script>
+  </body>
+</html>
