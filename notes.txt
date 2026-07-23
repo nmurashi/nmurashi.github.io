@@ -1,3 +1,7 @@
+TODO: 
+-Better flesh out LeakVue section
+-Favicon
+
 Previous projects:
 
 <div class="project-name">ICS Search Engine</div>
