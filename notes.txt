@@ -1,0 +1,17 @@
+Previous projects:
+
+<div class="project-name">ICS Search Engine</div>
+<div class="project-desc">
+    An indexer and search engine personally developed in 4 weeks for the School
+    of Information and Computer Sciences (ICS) &mdash; lightweight, quick
+    (&lt;300ms response), and built to scale. Crawled &gt;7,000 pages of the ICS
+    subdomain into an inverted index, with ranked relevance for search results.
+</div>
+
+<div class="project-name">Snout Bout</div>
+<div class="project-desc">
+    A simple lighthearted game involving Peter the Anteater showing off his
+    determination. Brainstormed and prototyped in a team setting through the
+    first stage of development, leading level design and facilitating team
+    collaboration.
+</div>

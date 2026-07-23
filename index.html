@@ -6,185 +6,190 @@
     <meta name="author" content="Nathan Murashie">
     <meta name="description" content="Portfolio for Nathan Murashie">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Font Import -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Bootstrap Import -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!-- Personal css import -->
-    <link rel="stylesheet" href="styles.css">
-    <title>My Portfolio</title>
-
-
+    <link rel="stylesheet" href="style.css">
+    <title>Nathan Murashie</title>
 </head>
-<body style="background-color:#FAF9F6">
-    <!-- Navbar/Navmenu -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">Nathan Murashie</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#education" class="nav-link">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#qualifications" class="nav-link">Qualifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#expertise" class="nav-link">Expertise</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<body>
+    <nav class="top-nav">
+        <a href="#" class="nav-brand">Nathan Murashie</a>
+        <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
     </nav>
 
-    <!-- Welcome Banner -->
-    <section class="bg-dark text-light pt-5 text-center">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between row">
-                <div class="col-lg-8 p-5">
-                    <h1>Nathan Murashie</h1>
-                    <p class="lead">Hello! I'm Nathan Murashie, a recent graduate from the University of California, Irvine who is seeking an opportunity to utilize 
-                        and expand my skills through internships and hard work. Welcome!</p>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <img class="img-fluid float-right imgpad" src="me.png" alt="Nathan holding a pumpkin">
+    <main class="page">
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Nathan Murashie</h1>
+            <p class="hero-sub">B.S. Informatics &middot; University of California, Irvine</p>
+            <p class="hero-text">
+                A software developer with a passion for problem solving and a drive to learn. I enjoy building projects that are both functional and efficient, while also being user-friendly and accessible.
+            </p>
+            <a href="https://github.com/nmurashi" class="hero-link" target="_blank" rel="noopener">
+                GitHub
+                <svg class="icon-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-header">
+                <h2 class="section-label">Projects</h2>
+            </div>
+            <div class="project-list">
+                <a href="https://nmurashi.github.io/KUCI-thing" class="project-item" target="_blank" rel="noopener">
+                    <span class="project-num">01</span>
+                    <div class="project-body">
+                        <div class="project-text">
+                            <div class="project-name">Anteater Network Tuner (ANT)</div>
+                            <div class="project-desc">
+                                A simple radio streaming player and weekly show schedule browser for 
+                                KUCI 88.9 FM, UC Irvine's student-run underground radio station. A webscraper
+                                automatically collects and sorts the schedule information.
+                                Built with React, Vite, and Tailwind CSS.
+                            </div>
+                        </div>
+                        <div class="project-thumb" style="background-image: url('KUCI-project.png')"></div>
+                    </div>
+                    <span class="project-arrow">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                </a>
+                <a href="https://www.americanleakdetection.com/residential/pools-spas-fountains/leakvue-services/" class="project-item" target="_blank" rel="noopener">
+                    <span class="project-num">02</span>
+                    <div class="project-body">
+                        <div class="project-text">
+                            <div class="project-name">LeakVue</div>
+                            <div class="project-desc">
+                                A laser sensor device that measures the leak (or flow) rate of water in as little 
+                                as 15 minutes, most often used in a pool or spa. An app for iOS or Android interfaces 
+                                with the hardware to run it and collect data. Mobile app built with React Native.
+                            </div>
+                        </div>
+                        <div class="project-thumb" style="background-image: url('leakvue.png')"></div>
+                    </div>
+                    <span class="project-arrow">
+                        <svg class="icon-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section-header">
+                <h2 class="section-label">About</h2>
+            </div>
+
+            <div class="two-col">
+                <div class="col-label">About Me</div>
+                <div class="col-content">
+                    <p>
+                        Hello! I'm Nathan Murashie, a developer with an enthusiasm for not just completing 
+                        tasks, but to learn and improve my skills along the way. I have a genuine joy for 
+                        learning new technologies and tools to make things better.
+                    </p>
+                    <p>
+                        With both a hands-on approach to troubleshooting and problem solving, I strive to 
+                        understand the underlying issues and find effective solutions. I seek out feedback
+                        as a way to improve, and enjoy collaborating with others to achieve the best results.
+                    </p>
+                    <p>
+                        When I'm not developing, I enjoy trying out new things and exploring what's around me. 
+                        Let it be a walk in a park I've never been to or, more recently, <a href="watch.jpg" target="_blank" rel="noopener">building watches!</a>
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Education -->
-    <section class="p-2">
-        <div class="container">
-            <h2 class="text-center" id="education">Education</h2>
-            <div class="row">
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center">UNIVERSITY OF CALIFORNIA, IRVINE, Irvine, CA</div>
-                            <ul>
-                                <li>B.S. in Informatics with a 3.9 GPA from the School of Information and Computer Sciences</li>
-                                <li>Additional ASTs in Computer Science and Mathematics</li>
-                            </ul>
+            <div class="two-col" id="experience">
+                <div class="col-label">Experience</div>
+                <div class="col-content">
+                    <div class="exp-table">
+                        <div class="exp-row" tabindex="0" role="button" aria-expanded="false">
+                            <span class="exp-date">2022-Current</span>
+                            <span class="exp-role">Software Engineer</span>
+                            <span class="exp-company">Intellicon Electronics</span>
+                            <span class="exp-location">Santa Ana, CA</span>
+                            <span class="exp-chevron"></span>
+                            <div class="exp-details">
+                                <ul>
+                                    <li>Developed and maintained software for embedded systems</li>
+                                    <li>Reverse engineered existing systems to improve and extend functionality</li>
+                                    <li>Experience with both through-hole and surface mount technologies</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="p-2">
-        <div class="container">
-            <h2 class="text-center" id="experience">Professional Experience</h2>
-            <div class="row">
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center">INTELLICON ELECTRONICS, Santa Ana, CA</div>
-                            <ul>
-                                <li>Contractor for quality control and manufacturing of embedded systems</li>
-                                <li>Gained experience for both through hole and surface mount technologies</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center">ST. PAUL'S EPISCOPAL CHURCH, Tustin, CA</div>
-                            <ul>
-                                <li>Head sexton for the church and related groups, assisting with organizing events</li>
-                                <li>Extensive experience in communication, leadership, and on-the-spot solutions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="p-2">
-        <div class="container">
-            <h2 class="text-center" id="projects">Projects</h2>
-            <div class="row">
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center">ICS SEARCH ENGINE</div>
-                            <ul>
-                                <li>An indexer and search engine personally developed in 4 weeks for the School of Information and Computer Sciences (ICS) that is lightweight, quick (&lt;300ms response), and built to scale</li>
-                                <li>Built web crawler to scrape the ICS subdomain (&gt;7k pages) to parse pages and store results in inverted index</li>
-                                <li>Ranked relevance used for search engine to show most relevant results first</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center">SNOUT BOUT</div>
-                            <ul>
-                                <li>A simple lighthearted game involving Peter the Anteater showing off his determination!</li>
-                                <li>Brainstormed and prototyped in a team setting to completed first stage of game</li>
-                                <li>Further developed team skills by leading level design and facilitating team collaboration</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Qualifications and Expertise -->
-    <section class="p-2">
-        <div class="container">
-            <h2 class="text-center">Professional Skills and Relevant Coursework</h2>
-            <div class="row">
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center" id="qualifications">Summary of Qualifications</div>
-                            <ul>
-                                <li>Dedicated to completing tasks given and on improving completion times</li>
-                                <li>Ability to keep tasks and procedures well documented for future reference</li>
-                                <li>Research oriented to assist in troubleshooting and solving problems</li>
-                                <li>Open and understanding to feedback and criticism in order to further develop skills</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body">
-                            <div class="h3 card-title mb-3 text-center" id="expertise">Areas of Expertise</div>
-                            <ul>
-                                <li>Programming Experience in C++, Python</li>
-                                <li>Strategic Troubleshooting</li>
-                                <li>Quality Assurance</li>
-                                <li>Communication Skills</li>
-                            </ul>
+                        <div class="exp-row" tabindex="0" role="button" aria-expanded="false">
+                            <span class="exp-date">2017-2021</span>
+                            <span class="exp-role">Head Sexton</span>
+                            <span class="exp-company">St. Paul's Episcopal Church</span>
+                            <span class="exp-location">Tustin, CA</span>
+                            <span class="exp-chevron"></span>
+                            <div class="exp-details">
+                                <ul>
+                                    <li>Organized and coordinated various events and services</li>
+                                    <li>Managed facility operations and maintenance</li>
+                                    <li>Liaised between staff, clergy, and community members</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Bootstrap JS Import -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    
+            <div class="two-col" id="education">
+                <div class="col-label">Education</div>
+                <div class="col-content edu-content">
+                    <strong>University of California, Irvine</strong> &mdash; Irvine, CA<br>
+                    B.S. in Informatics, School of Information and Computer Sciences<br>
+                    Additional ASTs in Computer Science and Mathematics
+                </div>
+            </div>
+
+            <div class="two-col" id="skills">
+                <div class="col-label">Skills</div>
+                <div class="col-content">
+                    <div class="tag-list">
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Quality Assurance</span>
+                        <span class="tag">Troubleshooting</span>
+                        <span class="tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page">
+        <div class="site-footer">
+            <span>&copy; 2026 Nathan Murashie</span>
+            <a href="https://github.com/nmurashi" target="_blank" rel="noopener" class="footer-link">
+                github.com/nmurashi
+                <svg class="icon-arrow" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.exp-row').forEach(function (row) {
+            function toggle() {
+                var expanded = row.classList.toggle('expanded');
+                row.setAttribute('aria-expanded', expanded);
+            }
+            row.addEventListener('click', toggle);
+            row.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggle();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
